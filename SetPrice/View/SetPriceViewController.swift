@@ -1,16 +1,36 @@
-import Foundation
+import UIKit
 
-final public class SetPriceViewControllerProtocol: UIViewController {
+class SetPriceViewController: UIViewController {
     
-    lazy var system: System? = System.singleton() // Should be lazy weak var, but compiler complains
-    lazy var eventHandler: SetPriceEventHandlerProtocol? = self.setupEventHandler()
-    private var viewModel: SetPriceViewModel?
-    
-    private func setupEventHandler() -> SetPriceEventHandlerProtocol? {
-        return SetPriceEventPresenter(view: self)
+    lazy var eventHandler: SetPriceEventHandlerProtocol = SetPricePresenter(view: self)
+    var viewModel: SetPriceViewModel? {
+    	didSet {
+    		refresh()
+    	}
     }
+	
+    override func viewDidLoad() {
+        super.viewDidLoad()
+	}
+	
+    // MARK: Interface Builder Outlets
+    
+    
+    
+    // MARK: Interface Builder Actions
+
 
 }
+
+extension SetPriceViewController {
+	
+    func refresh() {
+        assert(Thread.isMainThread)
+
+    }
+	
+}
+
 
 extension SetPriceViewController: SetPriceViewControllerProtocol {
     

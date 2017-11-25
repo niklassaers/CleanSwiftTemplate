@@ -1,5 +1,5 @@
 import Foundation
 
-public protocol SetPriceEntityGatewayProtocol: class {
+protocol SetPriceEntityGatewayProtocol: class {
 
 }

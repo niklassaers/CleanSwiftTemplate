@@ -1,7 +1,7 @@
 # CleanSwiftTemplate
 Clean Swift template
 
-This is the Clean template I use for Swift code
+This is a template for Clean Swift
 
-## Usage
-bash gen.sh BaseName
+###Usage###
+sh gen.sh BaseName

@@ -1,5 +1,7 @@
 import Foundation
 
-public protocol SetPriceViewControllerProtocol: class {
+protocol SetPriceViewControllerProtocol: class {
 
+	var eventHandler: SetPriceEventHandlerProtocol { get }
+	var viewModel: SetPriceViewModel? { get set }
 }

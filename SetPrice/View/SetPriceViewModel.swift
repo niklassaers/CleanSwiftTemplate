@@ -1,5 +1,5 @@
 import Foundation
 
-public struct SetPriceViewModel {
+struct SetPriceViewModel {
     
 }

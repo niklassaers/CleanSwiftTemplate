@@ -1,12 +1,11 @@
 import Foundation
 
-final public class SetPriceEntityGateway: BaseClient {
+class SetPriceEntityGateway {
 
     weak var interactor: SetPriceInteractorProtocol?
 
-    public init(system: System, interactor: SetPriceInteractorProtocol) {
+    init(interactor: SetPriceInteractorProtocol) {
         self.interactor = interactor
-        super.init(system: system)
     }
 }
 

@@ -1,5 +1,5 @@
 import Foundation
 
-public protocol SetPricePresenterProtocol: class {
+protocol SetPricePresenterProtocol: class {
 
 }

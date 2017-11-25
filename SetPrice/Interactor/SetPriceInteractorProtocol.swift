@@ -1,5 +1,9 @@
 import Foundation
 
-public protocol SetPriceInteractorProtocol: class {
+protocol SetPriceInteractorProtocol: class {
 
+    // In
+    
+    // Out
+    
 }

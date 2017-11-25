@@ -1,9 +1,7 @@
 import Foundation
 
-final class SetPriceConnector {
+class SetPriceConnector {
     
-    lazy var system: System? = System.singleton() // Should be lazy weak var, but compiler complains
-
     init() {
         
     }
