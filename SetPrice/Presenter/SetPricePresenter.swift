@@ -13,10 +13,9 @@ class SetPricePresenter {
 }
 
 extension SetPricePresenter: SetPriceEventHandlerProtocol {
-    
+
 }
 
 extension SetPricePresenter: SetPricePresenterProtocol {
 
 }
-

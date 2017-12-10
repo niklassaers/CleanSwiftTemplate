@@ -2,7 +2,7 @@ import UIKit
 @testable import YourApp
 
 class SetPriceEntityGatewayMock {
-    
+
 }
 
 extension SetPriceEntityGatewayMock: VerifiableMock {
@@ -12,5 +12,5 @@ extension SetPriceEntityGatewayMock: VerifiableMock {
 }
 
 extension SetPriceEntityGatewayMock: SetPriceEntityGatewayProtocol {
-    
+
 }

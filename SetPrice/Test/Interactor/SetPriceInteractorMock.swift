@@ -2,7 +2,7 @@ import UIKit
 @testable import YourApp
 
 class SetPriceInteractorMock {
-    
+
 }
 
 extension SetPriceInteractorMock: VerifiableMock {
@@ -12,5 +12,5 @@ extension SetPriceInteractorMock: VerifiableMock {
 }
 
 extension SetPriceInteractorMock: SetPriceInteractorProtocol {
-    
+
 }

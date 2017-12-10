@@ -2,7 +2,7 @@ import UIKit
 @testable import YourApp
 
 class SetPriceEventHandlerMock {
-    
+
 }
 
 extension SetPriceEventHandlerMock: VerifiableMock {
@@ -12,5 +12,5 @@ extension SetPriceEventHandlerMock: VerifiableMock {
 }
 
 extension SetPriceEventHandlerMock: SetPriceEventHandlerProtocol {
-    
+
 }

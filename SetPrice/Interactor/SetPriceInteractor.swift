@@ -14,8 +14,7 @@ class SetPriceInteractor {
 extension SetPriceInteractor: SetPriceInteractorProtocol {
 
     // In
-    
-    // Out
-    
-}
 
+    // Out
+
+}

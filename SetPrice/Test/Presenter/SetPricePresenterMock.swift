@@ -2,7 +2,7 @@ import UIKit
 @testable import YourApp
 
 class SetPricePresenterMock {
-    
+
 }
 
 extension SetPricePresenterMock: VerifiableMock {
@@ -12,5 +12,5 @@ extension SetPricePresenterMock: VerifiableMock {
 }
 
 extension SetPricePresenterMock: SetPricePresenterProtocol {
-    
+
 }
