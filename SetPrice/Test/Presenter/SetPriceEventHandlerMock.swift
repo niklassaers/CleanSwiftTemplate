@@ -12,5 +12,9 @@ extension SetPriceEventHandlerMock: VerifiableMock {
 }
 
 extension SetPriceEventHandlerMock: SetPriceEventHandlerProtocol {
+    func prepare(for segue: UIStoryboardSegue) {
+    }
 
+    func willAppear(withPresentationModel: SetPricePresentationModel) {
+    }
 }

@@ -11,5 +11,4 @@ class SetPriceEntityGateway {
 
 extension SetPriceEntityGateway : SetPriceEntityGatewayProtocol {
 
-
 }

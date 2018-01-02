@@ -13,12 +13,13 @@ class SetPriceViewController: UIViewController {
         super.viewDidLoad()
 	}
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        eventHandler.prepare(for: segue)
+    }
+
     // MARK: Interface Builder Outlets
 
-
-
     // MARK: Interface Builder Actions
-
 
 }
 
@@ -30,7 +31,6 @@ extension SetPriceViewController {
     }
 
 }
-
 
 extension SetPriceViewController: SetPriceViewControllerProtocol {
 
