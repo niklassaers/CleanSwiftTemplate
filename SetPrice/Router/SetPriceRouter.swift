@@ -14,6 +14,7 @@ class SetPriceRouter: NSObject {
 
 extension SetPriceRouter: SetPriceRouterProtocol {
 
+    /*
     func prepareForXXX(segue: ToXXXSegue) {
         let configuration = SetPriceConfiguration()
         let module = segue.build(withView: segue.typedDestination, configuration: configuration)
@@ -40,4 +41,5 @@ extension SetPriceRouter: SetPriceRouterProtocol {
             navCtl.pushViewController(viewController, animated: true)
         }
     }
+     */
 }

@@ -25,6 +25,7 @@ extension SetPricePresenter: SetPriceEventHandlerProtocol {
     }
 
     func prepare(for segue: UIStoryboardSegue) {
+        /*
         if let segue = segue as? ToXXXSegue,
            let router = router,
            let scene = segue.identifier {
@@ -33,6 +34,7 @@ extension SetPricePresenter: SetPriceEventHandlerProtocol {
                 router.perform(selector, with: segue)
             }
         }
+         */
     }
 }
 
