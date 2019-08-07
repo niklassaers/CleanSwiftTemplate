@@ -1,16 +1,16 @@
 import SwiftUI
 
-struct ConnectionOverviewView : View {
+struct QueryEditorView : View {
     
-    @ObservedObject var viewModel: ConnectionOverviewViewModel
+    @ObservedObject var viewModel: QueryEditorViewModel
     @State var isExecuting: Bool = false
     
-    var eventHandler: ConnectionOverviewEventHandlerProtocol
+    var eventHandler: QueryEditorEventHandlerProtocol
     
-    init(viewModel: ConnectionOverviewViewModel) {
-        print("did init ConnectionOverviewView")
+    init(viewModel: QueryEditorViewModel) {
+        print("did init QueryEditorView")
         self.viewModel = viewModel
-        self.eventHandler = ConnectionOverviewPresenter(viewModel: viewModel)
+        self.eventHandler = QueryEditorPresenter(viewModel: viewModel)
     }
     
     var body: some View {
@@ -48,14 +48,14 @@ struct ConnectionOverviewView : View {
     }
 }
 
-extension ConnectionOverviewView: ConnectionOverviewViewProtocol {
+extension QueryEditorView: QueryEditorViewProtocol {
 }
 
 #if DEBUG
-struct ConnectionOverviewView_Previews : PreviewProvider {
-    static var viewModel = ConnectionOverviewViewModel()
+struct QueryEditorView_Previews : PreviewProvider {
+    static var viewModel = QueryEditorViewModel()
     static var previews: some View {
-        ConnectionOverviewView(viewModel: viewModel)
+        QueryEditorView(viewModel: viewModel)
     }
 }
 #endif

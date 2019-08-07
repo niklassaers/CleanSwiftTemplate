@@ -1,16 +1,16 @@
 import SwiftUI
 
-struct ConnectionOverviewView : View {
+struct ConnectionSplitViewView : View {
     
-    @ObservedObject var viewModel: ConnectionOverviewViewModel
+    @ObjectBinding var viewModel: ConnectionSplitViewViewModel
     @State var isExecuting: Bool = false
     
-    var eventHandler: ConnectionOverviewEventHandlerProtocol
+    var eventHandler: ConnectionSplitViewEventHandlerProtocol
     
-    init(viewModel: ConnectionOverviewViewModel) {
-        print("did init ConnectionOverviewView")
+    init(viewModel: ConnectionSplitViewViewModel) {
+        print("did init ConnectionSplitViewView")
         self.viewModel = viewModel
-        self.eventHandler = ConnectionOverviewPresenter(viewModel: viewModel)
+        self.eventHandler = ConnectionSplitViewPresenter(viewModel: viewModel)
     }
     
     var body: some View {
@@ -48,14 +48,14 @@ struct ConnectionOverviewView : View {
     }
 }
 
-extension ConnectionOverviewView: ConnectionOverviewViewProtocol {
+extension ConnectionSplitViewView: ConnectionSplitViewViewProtocol {
 }
 
 #if DEBUG
-struct ConnectionOverviewView_Previews : PreviewProvider {
-    static var viewModel = ConnectionOverviewViewModel()
+struct ConnectionSplitViewView_Previews : PreviewProvider {
+    static var viewModel = ConnectionSplitViewViewModel()
     static var previews: some View {
-        ConnectionOverviewView(viewModel: viewModel)
+        ConnectionSplitViewView(viewModel: viewModel)
     }
 }
 #endif

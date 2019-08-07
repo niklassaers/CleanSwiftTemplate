@@ -2,9 +2,9 @@ import Foundation
 import SwiftUI
 import Combine
 
-final class ConnectionOverviewViewModel: ObservableObject {
+final class QueryEditorViewModel: ObservableObject {
     
-    let didChange = PassthroughSubject<ConnectionOverviewViewModel, Never>()
+    let didChange = PassthroughSubject<QueryEditorViewModel, Never>()
     
     var favouriteNodes: [NodeViewModel] {
         didSet {
@@ -20,7 +20,7 @@ final class ConnectionOverviewViewModel: ObservableObject {
     var relationshipPropertyKeys: [String] { didSet { didChange.send(self) } }
 
     init() {
-        print("Initialized ConnectionOverviewViewModel")
+        print("Initialized QueryEditorViewModel")
 
         favouriteNodes = [ NodeViewModel(labels: ["Dad"]) ]
         nodeLabels = ["A", "B"]
