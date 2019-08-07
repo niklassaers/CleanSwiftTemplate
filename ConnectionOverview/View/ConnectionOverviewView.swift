@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ConnectionOverviewView : View {
     
-    @ObjectBinding var viewModel: ConnectionOverviewViewModel
+    @ObservedObject var viewModel: ConnectionOverviewViewModel
     @State var isExecuting: Bool = false
     
     var eventHandler: ConnectionOverviewEventHandlerProtocol

@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 import Combine
 
-final class ConnectionOverviewViewModel: BindableObject {
+final class ConnectionOverviewViewModel: ObservableObject {
     
     let didChange = PassthroughSubject<ConnectionOverviewViewModel, Never>()
     
